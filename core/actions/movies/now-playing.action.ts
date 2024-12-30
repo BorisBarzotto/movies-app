@@ -1,10 +1,12 @@
 import { MovieDbResponse } from '@/infrastructure/interfaces/moviedb-response';
 import { movieApi } from '../../api/movie-api';
+import { MovieMapper } from '@/infrastructure/mappers/movie.mapper';
 
 export const nowPlayingAction = async () => {
     try{
         const { data } = await movieApi.get<MovieDbResponse>('/now_playing');
-        console.log(data);
+        const movies = data.results.map(MovieMapper.fromTheMovieDBToMovie);
+        console.log(movies);
         return []
     }
     catch(error){

@@ -1,4 +1,4 @@
-interface MovieResult {
+export interface MovieResult {
     adult: boolean;
     backdrop_path: string;
     genre_ids: number[];
@@ -15,7 +15,7 @@ interface MovieResult {
     vote_count: number;
   }
   
-  interface Dates {
+  export interface Dates {
     maximum: string;
     minimum: string;
   }
