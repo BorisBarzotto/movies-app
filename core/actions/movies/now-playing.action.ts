@@ -6,8 +6,8 @@ export const nowPlayingAction = async () => {
     try{
         const { data } = await movieApi.get<MovieDbResponse>('/now_playing');
         const movies = data.results.map(MovieMapper.fromTheMovieDBToMovie);
-        console.log(movies);
-        return []
+
+        return movies;
     }
     catch(error){
         console.log(error);
