@@ -1,6 +1,7 @@
 import { MovieDbResponse } from '@/infrastructure/interfaces/moviedb-response';
 import { movieApi } from '../../api/movie-api';
 import { MovieMapper } from '@/infrastructure/mappers/movie.mapper';
+import { Options } from './top-rated.action';
 
 export const nowPlayingAction = async () => {
     try{
