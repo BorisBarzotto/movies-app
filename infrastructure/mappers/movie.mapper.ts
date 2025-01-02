@@ -1,3 +1,4 @@
+import { CastResponse } from "../interfaces/castdb-response.interface";
 import { Movie, MovieDetail } from "../interfaces/movie.interface";
 import { MovieDetailResponse } from "../interfaces/moviedb-detail-response";
 import { MovieDbResponse, MovieResult } from "../interfaces/moviedb-response";

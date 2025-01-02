@@ -1,4 +1,3 @@
-import { MovieDbResponse } from '@/infrastructure/interfaces/moviedb-response';
 import { movieApi } from '../../api/movie-api';
 import { MovieMapper } from '@/infrastructure/mappers/movie.mapper';
 import { MovieDetailResponse } from '@/infrastructure/interfaces/moviedb-detail-response';
